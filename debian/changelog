@@ -1,0 +1,98 @@
+haskell-js-jquery (3.3.1-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:39:38 +0800
+
+haskell-js-jquery (3.3.1-3) unstable; urgency=medium
+
+  * Sourceful upload for GHC 8.8.
+
+ -- Clint Adams <clint@debian.org>  Fri, 05 Jun 2020 09:17:09 -0400
+
+haskell-js-jquery (3.3.1-2) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sun, 30 Sep 2018 21:13:15 +0300
+
+haskell-js-jquery (3.3.1-1) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 16:24:39 -0400
+
+haskell-js-jquery (3.2.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sean Whitton <spwhitton@spwhitton.name>  Sun, 03 Sep 2017 13:52:10 -0700
+
+haskell-js-jquery (3.1.1-2) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:34:36 -0400
+
+haskell-js-jquery (3.1.1-1) experimental; urgency=medium
+
+  * New upstream version.
+
+ -- Clint Adams <clint@debian.org>  Mon, 10 Oct 2016 15:30:02 -0400
+
+haskell-js-jquery (1.12.4-2) unstable; urgency=medium
+
+  * libghc-js-jquery-dev: Add dependency on libghc-js-jquery-data
+  * Update d/copyright file (bump copyright years)
+
+ -- Ilias Tsitsimpis <i.tsitsimpis@gmail.com>  Sun, 12 Jun 2016 17:53:54 +0300
+
+haskell-js-jquery (1.12.4-1) unstable; urgency=medium
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Joachim Breitner ]
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 29 May 2016 12:25:50 +0200
+
+haskell-js-jquery (1.11.3-4) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:54:41 -0500
+
+haskell-js-jquery (1.11.3-3) experimental; urgency=medium
+
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:28:02 +0200
+
+haskell-js-jquery (1.11.3-2) unstable; urgency=medium
+
+  * Rebuild with newer haskell-devscripts
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 13 Jun 2015 16:00:07 +0200
+
+haskell-js-jquery (1.11.3-1) unstable; urgency=low
+
+  * Initial release. (Closes: #787184)
+
+ -- Iustin Pop <iustin@debian.org>  Sun, 31 May 2015 00:39:59 +0200

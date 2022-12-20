@@ -1,0 +1,72 @@
+Source: haskell-js-jquery
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders: Iustin Pop <iustin@debian.org>,
+           Clint Adams <clint@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+Build-Depends-Indep: ghc-doc
+Standards-Version: 4.5.0
+Homepage: https://github.com/ndmitchell/js-jquery#readme
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-js-jquery
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-js-jquery]
+X-Description: bundles the minified jQuery code into a Haskell package
+ This package bundles the minified jQuery code into a Haskell package, so it can
+ be depended upon by Cabal packages. The first three components of the version
+ number match the upstream jQuery version. The haskell library is designed to
+ meet the redistribution requirements of downstream users, and to reduce
+ duplication of bundled code in Debian.
+
+Package: libghc-js-jquery-dev
+Architecture: any
+Depends:
+ libghc-js-jquery-data (= ${source:Version}),
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-js-jquery-prof
+Architecture: any
+Depends: ${haskell:Depends}, ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-js-jquery-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends}, ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-js-jquery-data
+Architecture: all
+Depends: ${haskell:Depends}, ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
